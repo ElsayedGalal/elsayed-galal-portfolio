@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
+import { portfolioData } from '../data/portfolioData';
 import { sounds } from '../utils/sound';
-import { Volume2, VolumeX, Terminal } from 'lucide-react';
+import { Volume2, VolumeX, Terminal, FileDown } from 'lucide-react';
 
 export default function Navbar() {
-  const [isMuted, setIsMuted] = useState(false);
+  const { personal } = portfolioData;
+  const [isAudioOn, setIsAudioOn] = useState(sounds.enabled);
 
-  const handleAudioToggle = () => {
-    const state = sounds.toggleMute();
-    setIsMuted(state);
-    if (!state) sounds.playClickSnap();
+  const handleToggleSound = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const newState = sounds.toggleSound();
+    setIsAudioOn(newState);
   };
 
   return (
@@ -18,6 +21,7 @@ export default function Navbar() {
         {/* الهوية البرمجية */}
         <a 
           href="#" 
+          onClick={() => sounds.playClickSnap()}
           onMouseEnter={() => sounds.playHoverTick()}
           className="flex items-center gap-2 text-white font-mono font-bold text-sm tracking-tight"
         >
@@ -58,7 +62,7 @@ export default function Navbar() {
         {/* أدوات التحكم: زر كتم/تشغيل الصوت وزر تحميل الـ CV */}
         <div className="flex items-center gap-2.5">
           
-          {/* زر الصوت التفاعلي المباشر */}
+          {/* زر الصوت التفاعلي */}
           <button
             type="button"
             onClick={handleToggleSound}
