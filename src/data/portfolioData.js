@@ -199,7 +199,7 @@ export const portfolioData = {
     {
       degree: "Master of Business Administration (MBA)",
       institution: "Royale Business College – United Kingdom",
-      period: "September 2026 – Present",
+      period: "July 2026 – Present",
       focus: "Strategic Business Governance, Cost Variance Modeling & Capital Allocation"
     },
     {

@@ -139,7 +139,7 @@ export default function ParticleIntro({ onScrollDown }) {
   };
 
   return (
-    <section className="relative w-full h-screen bg-black overflow-hidden flex flex-col items-center justify-between select-none">
+    <section className="relative w-full h-screen bg-transparent overflow-hidden flex flex-col items-center justify-between select-none z-10">
       
       {/* شبكة الكانفاس المسؤولة عن تحريك الذرات */}
       <canvas ref={canvasRef} className="absolute inset-0 z-0 block w-full h-full" />
