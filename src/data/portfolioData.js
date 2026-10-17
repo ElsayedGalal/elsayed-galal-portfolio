@@ -19,15 +19,44 @@ export const portfolioData = {
     { value: "20+", label: "Service Hubs Monitored", detail: "Real-time Hajj operational telemetry" },
     { value: "60%", label: "Latency Cut", detail: "Automated ingestion & reporting pipelines" },
     { value: "36M", label: "Longitudinal Records", detail: "Unified historical single source of truth" },
-    { value: "100%", label: "Production Deployments", detail: "Live cloud analytics applications" }
+    { value: "100%", label: "Production Deployments", detail: "Live cloud analytics applications" },
+    { value: "4,000", label: "Monte Carlo Sims", detail: "Stochastic supply chain risk modeling" }
   ],
 
   projects: [
     // ==========================================
     // Tier 1: Core Enterprise Architectures (المشاريع الاستراتيجية الكبرى)
     // ==========================================
-    
-    // 1. إثراء الجود - منظومة الحج وقياس الرضا
+
+    // 1. برج التحكم اللوجستي ومحاكي المسارات السيادية (C4I Control Tower)
+    {
+      id: "c4i-logistics-control-tower",
+      title: "C4I Logistics Resilience Control Tower & Simulation Engine",
+      badge: "Maritime C4I & Stochastic Modeling",
+      category: "Logistics Intelligence & Predictive AI",
+      tier: "featured",
+      featured: true,
+      techStack: [
+        "React 18",
+        "Vite & Tailwind CSS",
+        "SVG Vector Telemetry",
+        "Monte Carlo Simulation",
+        "FRED PPI Modeling",
+        "Web Audio API"
+      ],
+      summary: "Mission-critical C4I web telemetry platform and digital twin monitoring vessel traffic across 4 global chokepoints (Bab el-Mandeb, Suez, Cape, Hormuz). Evaluates the Saudi Arabian Land Bridge (SAR multimodal rail/road corridor) using 4,000 Monte Carlo risk iterations and 95% CI inflation fan charts.",
+      impact: "Proved a 17-day transit SLA (-19 days vs. Cape detour), 100% war-risk surcharge elimination ($1,418/FEU saved), and 35% CO2 emissions reduction.",
+      images: [
+        "/projects/c4i/01_war_room_overview.png",
+        "/projects/c4i/02_landbridge_pipeline.png",
+        "/projects/c4i/04_predictive_simulator.png",
+        "/projects/c4i/07_monte_carlo_scenarios.png"
+      ],
+      githubUrl: "https://github.com/ElsayedGalal/c4i-logistics-resilience-tower",
+      liveUrl: "https://c4i-logistics-resilience-tower.vercel.app/"
+    },
+
+    // 2. إثراء الجود - منظومة الحج وقياس الرضا
     {
       id: "ithraa-telemetry-ecosystem",
       title: "Enterprise Pilgrim Telemetry & Experience Ecosystem",
@@ -43,11 +72,10 @@ export const portfolioData = {
         "/projects/ithraa/crowd-movement-1446.jpeg",
         "/projects/ithraa/admin-summary-1446.jpeg",
         "/projects/ithraa/reception-1446.jpeg"
-      ],
-
+      ]
     },
 
-   // 2. منصة الرصد الذكي للسلامة والعمليات الميدانية (HSE AI Agent Platform)
+    // 3. منصة الرصد الذكي للسلامة والعمليات الميدانية (HSE AI Agent Platform)
     {
       id: "hse-ai-agent-platform",
       title: "HSE AI Agent Platform: Live Monitoring & Incident Governance",
@@ -68,7 +96,7 @@ export const portfolioData = {
       liveUrl: "https://asset-manager--elsayedg637.replit.app/"
     },
 
-    // 3. بوابة أبناء المطرفي للعمليات الميدانية
+    // 4. بوابة أبناء المطرفي للعمليات الميدانية
     {
       id: "al-matrafi-platform",
       title: "Al-Matrafi Smart Operations AI Platform",
@@ -89,7 +117,7 @@ export const portfolioData = {
       liveUrl: "https://al-matrafi-smart-operations-ai-field-analytics-platform-bof6qg.streamlit.app/"
     },
 
-    // 4. شركة جبل عمر للتطوير - تدقيق واسترداد المرافق
+    // 5. شركة جبل عمر للتطوير - تدقيق واسترداد المرافق
     {
       id: "jabal-omar-charges",
       title: "Commercial Utility Allocation & OPEX Recovery Architecture",
@@ -105,11 +133,10 @@ export const portfolioData = {
         "/projects/jabal-omar/tenant-variance.png",
         "/projects/jabal-omar/retail-submetering.png"
       ],
-      githubUrl: "https://github.com/ElsayedGalal/Jabal-Omar-Utility-Facilities-BI",
-  
+      githubUrl: "https://github.com/ElsayedGalal/Jabal-Omar-Utility-Facilities-BI"
     },
 
-    // 5. شركة الشعاع الصاعد & AI Safety Sentinel
+    // 6. شركة الشعاع الصاعد & AI Safety Sentinel
     {
       id: "rising-ray-sentinel-showcase",
       title: "Geospatial Operational Risk & Edge Vision Sentinel",
@@ -131,16 +158,14 @@ export const portfolioData = {
         "/projects/rising-ray/spatial-violations.jpeg",
         "/projects/rising-ray/daily-reporting.jpeg"
       ],
-      githubUrl: "https://github.com/ElsayedGalal/ai-safety-sentinel-showcase",
-
+      githubUrl: "https://github.com/ElsayedGalal/ai-safety-sentinel-showcase"
     },
-
 
     // ==========================================
     // Tier 2: Domain Analytics Labs (المعمل التحليلي)
     // ==========================================
-    
-    // 6. فودافون - عمليات مراكز الاتصال
+
+    // 7. فودافون - عمليات مراكز الاتصال
     {
       id: "vodafone-cs-analytics",
       title: "Telecommunications Operations & SLA Intelligence",
@@ -154,11 +179,10 @@ export const portfolioData = {
       images: [
         "/projects/labs/vodafone-telecom.png"
       ],
-      githubUrl: "https://github.com/ElsayedGalal/Vodafone-Call-Center-Analysis",
-
+      githubUrl: "https://github.com/ElsayedGalal/Vodafone-Call-Center-Analysis"
     },
 
-    // 7. سلاسل الإمداد والتوزيع الإقليمي
+    // 8. سلاسل الإمداد والتوزيع الإقليمي
     {
       id: "regional-sales-supply-chain",
       title: "Regional Sales & Supply Chain Optimization",
@@ -172,11 +196,10 @@ export const portfolioData = {
       images: [
         "/projects/labs/supply-chain-matrix.png"
       ],
-      githubUrl: "https://github.com/ElsayedGalal/Regional-Sales-SupplyChain-Analytics",
-
+      githubUrl: "https://github.com/ElsayedGalal/Regional-Sales-SupplyChain-Analytics"
     },
 
-    // 8. حركة التجارة الدولية والاستيراد والتصدير
+    // 9. حركة التجارة الدولية والاستيراد والتصدير
     {
       id: "global-macroeconomic-trade",
       title: "Global Macroeconomic Trade & Logistics Engine",
@@ -190,8 +213,7 @@ export const portfolioData = {
       images: [
         "/projects/labs/global-trade-flows.jpg"
       ],
-      githubUrl: "https://github.com/ElsayedGalal/Global-Trade-Import-Export-Analytics",
-
+      githubUrl: "https://github.com/ElsayedGalal/Global-Trade-Import-Export-Analytics"
     }
   ],
 
